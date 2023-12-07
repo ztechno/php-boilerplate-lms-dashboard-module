@@ -36,5 +36,6 @@ if(isset($_GET['draw']))
 }
 
 Page::pushFoot("<script src='".asset('assets/crud/js/crud.js')."'></script>");
+Page::pushFoot("<script src='".asset('assets/exam/js/exam_schedules.js')."'></script>");
 
 return view('dashboard/views/index', compact('fields', 'tableName', 'success_msg', 'error_msg', 'crudRepository'));
